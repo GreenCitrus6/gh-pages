@@ -3,8 +3,8 @@ const nextConfig = {
     images: {
         unoptimized:true,
     },
-    basePath: isProd ? "/gh-pages" : "",
-    assetPrefix: isProd ? "/gh-pages" : "",
+    basePath: "/gh-pages",
+    assetPrefix: "/gh-pages",
     output: "export",
     reactStrictMode: true,
 };
