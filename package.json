@@ -1,6 +1,7 @@
 {
   "name": "gh-pages",
   "version": "0.1.0",
+  "homepage": "https://greencitrus6.github.io/gh-pages",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
