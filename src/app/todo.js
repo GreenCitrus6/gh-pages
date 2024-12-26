@@ -12,6 +12,7 @@ export default function ToDo() {
     //if localstorage isn't empty, load it into taskList
     useEffect(() => {
         const taskData = window.localStorage.getItem('TASKS');
+        if (taskData === null) {window.localStorage.setItem('TASKS', JSON.stringify(taskList));}
         if (taskData.length > 0)  { setTaskList(JSON.parse(taskData)); }
         // console.log("b");
     }, [])
