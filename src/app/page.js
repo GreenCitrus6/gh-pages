@@ -1,6 +1,16 @@
+'use client';
+
 import Header from "./header";
-import ToDo from "./todo";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+import ToDo from "./todo";
+
+// const ToDoNoSSR = dynamic(
+//   () => import('./todo'),
+//   { ssr: false }
+// )
+
 
 export default function Home() {
   const basePath = "/gh-pages";
