@@ -4,12 +4,12 @@ import Header from "./header";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-import ToDo from "./todo";
+// import ToDo from "./todo";
 
-// const ToDoNoSSR = dynamic(
-//   () => import('./todo'),
-//   { ssr: false }
-// )
+const ToDoNoSSR = dynamic(
+  () => import('./todo'),
+  { ssr: false }
+)
 
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
           />
         </section>
         <div className="mt-3">
-          <ToDo />
+          <ToDoNoSSR />
         </div>
       </main>
     </>

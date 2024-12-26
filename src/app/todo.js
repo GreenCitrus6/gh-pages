@@ -12,12 +12,14 @@ export default function ToDo() {
     //if localstorage isn't empty, load it into taskList
     useEffect(() => {
         const taskData = window.localStorage.getItem('TASKS');
-        if (taskData.length > 0) setTaskList(JSON.parse(taskData));
+        if (taskData.length > 0)  { setTaskList(JSON.parse(taskData)); }
+        // console.log("b");
     }, [])
 
     //update tasks in localstorage on each change of TaskList's state
     useEffect(() => {
-        window.localStorage.setItem('TASKS', JSON.stringify(taskList));
+            window.localStorage.setItem('TASKS', JSON.stringify(taskList));
+            // console.log("a")
     }, [taskList]);
 
     const addTask = () => {

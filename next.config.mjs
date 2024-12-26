@@ -6,7 +6,7 @@ const nextConfig = {
     basePath: "/gh-pages",
     assetPrefix: "/gh-pages",
     output: "export",
-    reactStrictMode: true,
+    reactStrictMode: false,
 };
 
 export default nextConfig;
