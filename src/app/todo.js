@@ -13,7 +13,7 @@ export default function ToDo() {
     useEffect(() => {
         const taskData = window.localStorage.getItem('TASKS');
         if (taskData === null) {window.localStorage.setItem('TASKS', JSON.stringify(taskList));}
-        if (taskData.length > 0)  { setTaskList(JSON.parse(taskData)); }
+        if (taskData != null)  { setTaskList(JSON.parse(taskData)); }
         // console.log("b");
     }, [])
 
