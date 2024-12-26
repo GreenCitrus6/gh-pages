@@ -1,3 +1,4 @@
+'use client';
 
 export default function TodoItem({ task, taskId, taskIndex, taskList, setTaskList}) {
 
