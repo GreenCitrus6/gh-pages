@@ -11,11 +11,13 @@ export default function Header() {
             </h1>
 
             <nav >
-                <a className="text-2xl m-2"
+                <a className="text-2xl m-2
+                    hover:brightness-125 ease-in duration-100"
                     href="https://ttb3ar.github.io/website/">
                     🧸
                 </a>
-                <a className="text-2xl m-2"
+                <a className="text-2xl m-2
+                    hover:brightness-125 ease-in duration-100"
                     href="https://sunnyyou3.github.io/Website">
                     🌞
                 </a>
