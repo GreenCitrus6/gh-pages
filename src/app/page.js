@@ -18,10 +18,11 @@ export default function Home() {
             width={327}
             height={498}
             alt="carl"
+            priority={false}
           />
         </section>
         <div className="mt-3">
-          {/* <ToDo /> */}
+          <ToDo />
         </div>
       </main>
     </>
