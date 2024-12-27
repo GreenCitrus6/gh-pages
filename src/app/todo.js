@@ -81,6 +81,7 @@ export default function ToDo() {
             flex flex-row justify-between">
                 <input type="text" id="todoInput"
                     className="w-full 
+                    text-black 
                     border-slate-500 border-[1.5px] rounded-sm"
                 ></input>
                 
