@@ -3,6 +3,7 @@
 import Header from "./header";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import frog from "../../public/e44.webp";
 
 // import ToDo from "./todo";
 
@@ -29,6 +30,10 @@ export default function Home() {
             height={498}
             alt="carl"
             priority={false}
+          />
+          <Image 
+            src={frog}
+            alt="graphic design is my passion"
           />
         </section>
         <div className="mt-3 w-full">
