@@ -1,7 +1,6 @@
 'use client';
 
 import Header from "./header";
-import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const ToDoNoSSR = dynamic(

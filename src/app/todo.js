@@ -62,7 +62,7 @@ export default function ToDo() {
 
             {/* title plus todos container */}
            <div className="w-full h-full">
-                <h2 className="font-bold">todo list</h2>
+                <h2 className="font-bold text-black">todo list</h2>
             {/* ul container */}
                 <div className="w-full h-full">
                     <ul className="flex flex-col">

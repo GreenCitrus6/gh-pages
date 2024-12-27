@@ -31,7 +31,7 @@ export default function TodoItem({ task, taskId, taskIndex, taskList, setTaskLis
                 className="mr-2"
                 defaultChecked={task.complete ? 'checked' : ''}
                 onClick={toggleCompletion}></input>
-            <span className={task.complete ? "line-through text-gray-500" : ""}
+            <span className={task.complete ? "line-through text-gray-500" : "text-black"}
             >{task.taskName}</span>
             </div>
 
