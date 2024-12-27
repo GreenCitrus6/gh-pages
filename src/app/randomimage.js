@@ -3,6 +3,7 @@
 import Image from "next/image";
 import carl from "../../public/randoms/carl.gif";
 import catBoing from "../../public/randoms/cat-boing-magnet.gif";
+import catBoingSlow from "../../public/randoms/catboingslow.gif";
 import catExplosion from "../../public/randoms/cat-explosion.gif";
 import nineteen from "../../public/randoms/cat-kitty.gif";
 import feelThursday from "../../public/randoms/feel-that.gif";
@@ -12,7 +13,7 @@ import seal from "../../public/randoms/seal-baikal-seal.gif";
 import wall from "../../public/randoms/wall.gif";
 
 let imageArray = [
-    carl, catBoing, catExplosion, nineteen, feelThursday, indianDrama, foil, seal, wall
+    carl, catBoing, catBoingSlow, catExplosion, nineteen, feelThursday, indianDrama, foil, seal, wall
 ];
 
 function pickImage() {
