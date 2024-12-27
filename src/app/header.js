@@ -3,7 +3,7 @@ export default function Header() {
     const basePath = "/gh-pages";
     return (
         <header className="bg-cyan-600 text-white
-        p-2 px-4
+        p-2 px-4 min-w-[100vw];
         flex flex-row items-center justify-between"
         >
             <h1 className="text-3xl font-bold">

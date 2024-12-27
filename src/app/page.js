@@ -31,7 +31,7 @@ export default function Home() {
             priority={false}
           />
         </section>
-        <div className="mt-3">
+        <div className="mt-3 w-full">
           <ToDoNoSSR />
         </div>
       </main>

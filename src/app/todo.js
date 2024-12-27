@@ -4,6 +4,10 @@ import TodoItem from "./todoitem";
 import {v4 as uuidv4} from "uuid";
 import { useState, useEffect } from "react";
 
+import Image from "next/image";
+import plus from "../../public/plus.svg";
+import trash from "../../public/trash.svg";
+
 
 export default function ToDo() {
     const [taskList, setTaskList] = useState([]);
@@ -51,10 +55,15 @@ export default function ToDo() {
 
     return(
         <section className="flex flex-col justify-between items-start
-        min-w-[25%] w-48 h-[450px]">
+        max-w-80 w-full h-[450px]
+        bg-sky-200 bg-opacity-70
+        border-2 border-black rounded-lg 
+        p-2">
 
+            {/* title plus todos container */}
            <div className="w-full h-full">
-                <h2>todo list</h2>
+                <h2 className="font-bold">todo list</h2>
+            {/* ul container */}
                 <div className="w-full h-full">
                     <ul className="flex flex-col">
                         {taskList.map((task, index) => {
@@ -63,19 +72,29 @@ export default function ToDo() {
                                 taskList={taskList} setTaskList={setTaskList} />
                             );
                         })}
-
-                        {/* <TodoItem task="hi"/> */}
                     </ul>
                 </div> 
             </div> 
 
-            <div id="inputContainer" className="w-full">
-                <input type="text" id="todoInput"></input>
-                <button onClick={addTask}
-                >+</button>
-                <button onClick={clearTasks}>
-                    c
-                </button>
+            {/* input container */}
+            <div id="inputContainer" className="w-full 
+            flex flex-row justify-between">
+                <input type="text" id="todoInput"
+                    className="w-full 
+                    border-slate-500 border-[1.5px] rounded-sm"
+                ></input>
+                
+                <div className="flex flex-row">
+                    <button onClick={addTask}>
+                        <Image src={plus} 
+                        alt="+" title="add task" />
+                    </button>
+                    <button onClick={clearTasks}>
+                        <Image src={trash}
+                        alt="c" title="delete all tasks" />
+                    </button>
+                </div>
+
             </div>
         </section>
     );
